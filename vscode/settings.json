@@ -9,7 +9,7 @@
     {
     // Установить собственный шрифт и его размеры
     "editor.fontFamily": "'JetBrains Mono', 'bold', bold",
-    "editor.fontSize": 16,
+    "editor.fontSize": 24,
 
     // Установить иконки и настроить их
     "workbench.iconTheme": "material-icon-theme",
