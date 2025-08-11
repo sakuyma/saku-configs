@@ -1,0 +1,31 @@
+{
+  "palette": {
+    "seed": 0,
+    "selected": "adaptive-soft",
+    "custom": "e12729-f37324-f8cc1b-72b043-007f4e"
+  },
+  "mixColors": true,
+  "transition": true,
+  "accessibility": {
+    "highTextContrast": false
+  },
+  "knownTags": {
+    "самоанализ": 1,
+    "daily": 2,
+    "homepage": 3,
+    "программирование": 4,
+    "Психология": 5,
+    "продуктивность": 6,
+    "спорт": 7,
+    "Однопользовательская": 8,
+    "Многопользовательская": 9,
+    "Кооператив": 10,
+    "Соревновательная": 11,
+    "Инди": 12,
+    "AAA": 13,
+    "excalidraw": 14,
+    "todo": 15,
+    "include": 16
+  },
+  "_version": 3
+}

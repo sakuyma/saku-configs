@@ -1,0 +1,26 @@
+{
+  "backgroundTheme": "transparent",
+  "customBackground": "",
+  "localBackgrounds": [],
+  "showTopLeftSearchButton": true,
+  "topLeftSearchProvider": {
+    "command": "switcher:open",
+    "display": "Быстрый переход: Меню быстрого перехода"
+  },
+  "showTime": true,
+  "timeFormat": "24-hour",
+  "showGreeting": true,
+  "greetingText": "Hello, sakuyma.",
+  "showInlineSearch": true,
+  "inlineSearchProvider": {
+    "command": "omnisearch:show-modal",
+    "display": "Omnisearch: Vault search"
+  },
+  "showRecentFiles": true,
+  "showBookmarks": false,
+  "bookmarkSource": "all",
+  "bookmarkGroup": "",
+  "showQuote": true,
+  "quoteSource": "Quoteable",
+  "customQuotes": []
+}

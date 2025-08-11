@@ -1,0 +1,19 @@
+{
+  "cssTheme": "Minimal",
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "CalloutsAndCheckboxesHelpbox",
+    "Rainbow Folder enhanced animated(1)",
+    "dashboard",
+    "colored calendar",
+    "safari tabs"
+  ],
+  "theme": "obsidian",
+  "accentColor": "#26ba37",
+  "showRibbon": true,
+  "showViewHeader": true,
+  "baseFontSizeAction": false,
+  "textFontFamily": "",
+  "monospaceFontFamily": "JetBrains Mono",
+  "interfaceFontFamily": ""
+}

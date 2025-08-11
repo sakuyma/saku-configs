@@ -1,0 +1,14 @@
+{
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "/",
+  "readableLineLength": false,
+  "showInlineTitle": true,
+  "showLineNumber": false,
+  "spellcheck": false,
+  "focusNewTab": true,
+  "strictLineBreaks": false,
+  "showUnsupportedFiles": true,
+  "foldHeading": true,
+  "trashOption": "local"
+}

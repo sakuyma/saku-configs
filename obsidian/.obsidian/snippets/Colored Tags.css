@@ -1,0 +1,13 @@
+/* reading mode */
+a.tag {
+  border-radius: 10px !important;
+  color: white;
+  background-color: var(--text-accent);
+}
+
+/* live preview */
+span.cm-hashtag.cm-hashtag {
+  border-radius: 10;
+  color: white;
+  background-color: var(--text-accent);
+}

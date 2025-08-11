@@ -1,0 +1,20 @@
+.heading-collapse-indicator .svg-icon, .cm-fold-indicator .collapse-indicator .svg-icon {
+  display: none !important;
+}
+.heading-collapse-indicator .svg-icon, .cm-fold-indicator .collapse-indicator .svg-icon {
+  display: none !important;
+}
+ol {
+  list-style: none;
+  counter-reset: cupcake;
+  padding-left: 32px;
+}
+ol li {
+  counter-increment: cupcake;
+}
+ol li:before {
+  content: counters(cupcake, ".") ". ";
+}
+
+
+

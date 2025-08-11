@@ -1,0 +1,4 @@
+.workspace-tab-header[data-type="graph"],
+.workspace-tab-header[data-type="empty"]
+.workspace-tab-header[data-type="kanban"].is-active.mod-active,
+.workspace-tab-header[data-type="canvas"].is-active.mod-active {

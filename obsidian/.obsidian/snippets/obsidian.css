@@ -1,0 +1,701 @@
+/* ====================== */
+/* ГЛОБАЛЬНЫЕ АНИМАЦИИ */
+/* ====================== */
+* {
+  transition: 
+    background-color 600ms cubic-bezier(0.16, 1, 0.3, 1),
+    color 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 450ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 500ms cubic-bezier(0.32, 0, 0.67, 0),
+    border-color 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    filter 600ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ====================== */
+/* УЛУЧШЕННАЯ ЦВЕТОВАЯ СХЕМА */
+/* ====================== */
+
+/* Основной фон и текст */
+body {
+  background-color: #f5f7fa !important;
+  color: #2d3748 !important;
+}
+
+/* Время (01:22) */
+.time-display {
+  color: #718096 !important;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+/* Приветствие (Hello, sakuyma) */
+.greeting {
+  color: #4a5568 !important;
+  font-size: 1.1em;
+  margin: 8px 0 16px 0;
+}
+
+/* Поле поиска */
+.search-container {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.search-input {
+  color: #2d3748 !important;
+  padding: 10px 15px;
+  font-size: 0.95em;
+}
+
+.search-input::placeholder {
+  color: #a0aec0 !important;
+}
+
+.search-input:focus {
+  border-color: #4299e1 !important;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.2) !important;
+}
+
+/* Акцентные элементы */
+.accent {
+  color: #4299e1 !important;
+}
+
+/* Ховер-эффекты */
+.search-container:hover {
+  border-color: #cbd5e0 !important;
+}
+
+/* Плавное появление элементов */
+@keyframes gentle-appear {
+  0% { 
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+    filter: blur(1px);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes float-title {
+  0%, 100% { transform: translateY(0) rotateZ(0.2deg); }
+  50% { transform: translateY(-3px) rotateZ(-0.2deg); }
+}
+
+@keyframes line-expand {
+  0% { 
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% { 
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-line {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.9; }
+}
+
+@keyframes folder-appear {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+    border-color: transparent;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    border-color: hsl(216, 20%, 45%);
+  }
+}
+
+@keyframes folder-float-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    border-radius: 24px;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    border-radius: 12px;
+  }
+}
+
+@keyframes folder-breathe {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+/* ====================== */
+/* УМЕНЬШЕНИЕ ВЫДЕЛЕННЫХ ЭЛЕМЕНТОВ */
+/* ====================== */
+/* Уменьшаем заголовки */
+h1, h2, h3 {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+  padding: 0.2em 0 !important;
+  line-height: 1.3 !important;
+}
+
+/* Компактные списки */
+ul, ol {
+  margin-top: 0.3em !important;
+  margin-bottom: 0.3em !important;
+  padding-left: 1.2em !important;
+}
+
+li {
+  margin-bottom: 0.2em !important;
+  padding-left: 0.3em !important;
+}
+
+/* Уменьшаем разделители */
+hr {
+  margin: 0.5em 0 !important;
+  height: 1px !important;
+}
+
+/* Компактные блоки кода */
+pre, code {
+  padding: 0.2em 0.4em !important;
+  margin: 0.1em 0 !important;
+  line-height: 1.2 !important;
+}
+
+/* Уменьшаем отступы между параграфами */
+p {
+  margin-top: 0.4em !important;
+  margin-bottom: 0.4em !important;
+}
+
+/* Компактные таблицы */
+table {
+  margin: 0.3em 0 !important;
+}
+th, td {
+  padding: 0.2em 0.5em !important;
+}
+
+/* Уменьшаем жирное выделение */
+strong {
+  font-weight: 600 !important;
+  padding: 0 !important;
+}
+
+/* ====================== */
+/* ФИКС ДЛЯ ОБРЕЗАННЫХ НАЗВАНИЙ ПАПОК */
+/* ====================== */
+.nav-folder-title {
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: unset;
+  min-width: 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-folder-title-content {
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: unset;
+  flex: 0 1 auto;
+  min-width: 0;
+  display: inline-block;
+}
+
+.nav-folder-title[data-path] .nav-folder-title-content {
+  text-overflow: unset;
+}
+
+.nav-files-container {
+  overflow-x: visible;
+  overflow-y: auto;
+}
+
+.nav-folder-children {
+  overflow: visible;
+}
+
+/* ====================== */
+/* ОБНОВЛЕННЫЕ СТИЛИ ПАПОК */
+/* ====================== */
+.nav-folder {
+  background-color: #262626 !important;
+  border: 1px solid hsl(216, 20%, 35%) !important;
+  border-radius: 12px !important;
+  padding: 10px 15px !important;
+  margin: 8px 0;
+  position: relative;
+  overflow: visible !important;
+  transition: all 500ms cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 1px 2px rgba(255, 255, 255, 0.05);
+  animation: 
+    folder-float-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both,
+    folder-breathe 6s ease-in-out infinite 1.2s;
+  animation-delay: calc(var(--i) * 100ms);
+}
+
+.nav-folder:hover {
+  border-color: hsl(216, 30%, 55%) !important;
+  background-color: #2e2e2e !important;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.25),
+    inset 0 1px 2px rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+}
+
+.nav-folder-title-content {
+  color: #e0e6ed !important;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-folder-collapse-icon {
+  color: hsl(216, 30%, 55%) !important;
+  transition: 
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.3s ease !important;
+  flex: 0 0 auto;
+}
+
+.nav-folder-title:hover .nav-folder-collapse-icon {
+  color: var(--accent-primary) !important;
+  transform: rotate(90deg) scale(1.15);
+}
+
+.nav-folder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    hsl(216, 30%, 75%), 
+    transparent);
+  opacity: 0.5;
+  transition: opacity 0.4s ease;
+}
+
+.nav-folder:hover::before {
+  opacity: 0.8;
+  background: linear-gradient(90deg, 
+    transparent, 
+    var(--accent-primary), 
+    transparent);
+}
+
+.nav-folder::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  opacity: 0.5;
+  transition: opacity 0.4s ease;
+}
+
+.nav-folder:hover::after {
+  opacity: 0.3;
+}
+
+.nav-folder-title.is-active {
+  box-shadow: 
+    inset 0 0 0 1px var(--accent-primary),
+    0 0 15px rgba(127, 219, 202, 0.3);
+}
+
+/* ====================== */
+/* АНИМАЦИИ ВКЛАДОК */
+/* ====================== */
+.workspace-tab-header {
+  animation: gentle-appear 500ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  transition-delay: calc(var(--i, 0) * 60ms) !important;
+}
+
+.workspace-tab-header-inner {
+  transition: all 450ms cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.workspace-tab-header:hover .workspace-tab-header-inner {
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* ====================== */
+/* АНИМАЦИИ СПИСКОВ */
+/* ====================== */
+.dashboard div > ul > li,
+.homepage div > ul > li {
+  animation: gentle-appear 550ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  transition-delay: calc(var(--i, 0) * 70ms) !important;
+  transform-origin: center bottom;
+}
+
+.dashboard div > ul > li:hover,
+.homepage div > ul > li:hover {
+  transform: translateY(-5px) rotateZ(0.5deg) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ====================== */
+/* АНИМАЦИИ СВОЙСТВ */
+/* ====================== */
+.metadata-properties-heading {
+  animation: gentle-appear 500ms cubic-bezier(0.34, 1.56, 0.64, 1) 200ms both;
+  transform-origin: top center;
+}
+
+.metadata-property {
+  animation: gentle-appear 500ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  transition-delay: calc(var(--i, 0) * 80ms) !important;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.metadata-property:hover {
+  transform: translateX(5px);
+  background-color: rgba(127, 219, 202, 0.08);
+}
+
+/* ====================== */
+/* АНИМАЦИИ ЗАГОЛОВКОВ */
+/* ====================== */
+.title, h1, h2, h3 {
+  animation: 
+    gentle-appear 700ms cubic-bezier(0.34, 1.56, 0.64, 1) 300ms both,
+    float-title 8s ease-in-out infinite 1s;
+}
+
+/* ====================== */
+/* АНИМАЦИИ ТЕГОВ */
+/* ====================== */
+a.tag, span.cm-hashtag {
+  animation: gentle-appear 500ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  transition-delay: calc(var(--i, 0) * 50ms) !important;
+  transform-origin: center;
+}
+
+a.tag:hover, span.cm-hashtag:hover {
+  transform: scale(1.08) rotateZ(1deg);
+  box-shadow: 0 5px 15px rgba(127, 219, 202, 0.3);
+}
+
+/* ====================== */
+/* АНИМАЦИИ РАЗДЕЛИТЕЛЕЙ */
+/* ====================== */
+hr {
+  animation: 
+    line-expand 1200ms cubic-bezier(0.34, 1.56, 0.64, 1) 400ms both,
+    pulse-line 6s ease-in-out infinite 2s;
+  transform-origin: left center;
+  opacity: 0;
+}
+
+/* ====================== */
+/* АНИМАЦИИ КНОПОК */
+/* ====================== */
+.button, .clickable-icon {
+  animation: gentle-appear 500ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  transition-delay: calc(var(--i, 0) * 60ms) !important;
+  transform-origin: center;
+}
+
+.button:hover, .clickable-icon:hover {
+  transform: scale(1.15) rotateZ(3deg);
+  filter: brightness(1.2) drop-shadow(0 5px 10px rgba(127, 219, 202, 0.3));
+}
+
+/* ====================== */
+/* ПОСЛЕДОВАТЕЛЬНОЕ ПОЯВЛЕНИЕ */
+/* ====================== */
+.dashboard div > ul > li:nth-child(1) { --i: 1; }
+.dashboard div > ul > li:nth-child(2) { --i: 2; }
+.dashboard div > ul > li:nth-child(3) { --i: 3; }
+.dashboard div > ul > li:nth-child(4) { --i: 4; }
+
+.nav-folder:nth-child(1) { --i: 1; }
+.nav-folder:nth-child(2) { --i: 2; }
+.nav-folder:nth-child(3) { --i: 3; }
+.nav-folder:nth-child(4) { --i: 4; }
+
+.metadata-property:nth-child(1) { --i: 1; }
+.metadata-property:nth-child(2) { --i: 2; }
+.metadata-property:nth-child(3) { --i: 3; }
+.metadata-property:nth-child(4) { --i: 4; }
+
+.nav-folder:nth-child(5) { --i: 5; }
+.nav-folder:nth-child(6) { --i: 6; }
+
+/* ====================== */
+/* ДВУХКОЛОНОЧНЫЙ МАКЕТ ДЛЯ ДОМАШНЕЙ СТРАНИЦЫ */
+/* ====================== */
+.homepage .markdown-preview-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.homepage .title {
+  grid-column: 1 / -1;
+}
+
+.homepage .metadata-container {
+  grid-column: 1 / -1;
+}
+
+.homepage .two-column-section {
+  display: contents;
+}
+
+.homepage .two-column-section > h3 {
+  grid-column: 1 / -1;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: var(--border-soft);
+}
+
+.homepage .column {
+  background-color: var(--container-bg);
+  border: var(--container-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  height: fit-content;
+  animation: gentle-appear 600ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  animation-delay: calc(var(--col-index) * 100ms);
+}
+
+/* ====================== */
+/* СТИЛИ ДЛЯ ЗАДАЧ И ЧЕКБОКСОВ */
+/* ====================== */
+.task-list-item {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.task-list-item-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #a0aec0;
+  border-radius: 4px;
+  margin-right: 8px;
+  position: relative;
+  top: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.task-list-item-checkbox:checked {
+  background-color: #4299e1;
+  border-color: #4299e1;
+}
+
+.task-list-item-checkbox:checked::after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.task-list-item-checkbox:hover {
+  border-color: #4299e1;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.2);
+}
+
+.homepage .task-list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--accent-primary);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.homepage .task-list-item[data-task="x"]::before {
+  background-color: var(--accent-primary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.homepage .task-list-item:hover {
+  transform: translateX(8px);
+}
+
+.homepage .task-list-item:hover::before {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 0 3px rgba(127, 219, 202, 0.3);
+}
+
+/* ====================== */
+/* АДАПТИВНЫЕ ПРАВКИ */
+/* ====================== */
+@media (max-width: 900px) {
+  .homepage .markdown-preview-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nav-folder-children .nav-folder {
+  border-radius: 10px !important;
+  margin-left: 15px;
+  animation-delay: 0ms !important;
+  animation: folder-breathe 6s ease-in-out infinite 1.5s;
+}
+
+.nav-folder-children .nav-folder:hover {
+  transform: translateY(-2px) scale(1.01);
+}
+
+/* ================================== */
+/* ПОЛНЫЙ ФИКС ДЛЯ НАСТРОЕК OBSIDIAN */
+/* ================================== */
+.vertical-tab-nav-item,
+.vertical-tab-content,
+.setting-item,
+.setting-item * {
+  color: var(--text-normal) !important;
+  background-color: var(--background-primary) !important;
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.setting-item-name {
+  font-weight: 600 !important;
+  color: var(--text-accent) !important;
+}
+
+.setting-item-control input,
+.setting-item-control select,
+.setting-item-control textarea {
+  background-color: var(--background-secondary) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+  color: var(--text-normal) !important;
+}
+
+#settings-tab * {
+  all: revert !important;
+  color: var(--text-normal) !important;
+}
+
+/* ====================== */
+/* КОМПЛЕКСНЫЙ ФИКС БАГОВ */
+/* ====================== */
+
+/* 1. ФИКС КНОПОК (БАГ #1) */
+.clickable-icon {
+  position: relative;
+  transition: all 0.2s ease !important;
+}
+
+.clickable-icon.is-active,
+.clickable-icon.is-active:hover {
+  color: var(--text-normal) !important;
+  background-color: var(--background-secondary) !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.clickable-icon.is-active::before,
+.clickable-icon.is-active::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* 2. ФИКС ТРИГГЕРОВ И СИНИХ ЭЛЕМЕНТОВ (БАГ #2) */
+.accent,
+.text-accent,
+.cm-hashtag,
+.tag,
+.nav-folder-title.is-active,
+.search-result-file-matched-text,
+.setting-hotkey,
+.setting-item.mod-toggle .setting-item-info {
+  color: var(--text-normal) !important;
+  background-color: transparent !important;
+}
+
+/* 3. ФИКС НАСТРОЕК */
+.setting-item,
+.setting-item-control,
+.setting-item-info,
+.setting-item-name,
+.setting-item-description,
+.vertical-tab-nav-item {
+  color: var(--text-normal) !important;
+}
+
+.setting-item-name {
+  --text-accent: var(--text-normal) !important;
+}
+
+/* 4. ФИКС ССЫЛОК И ИНТЕРАКТИВНЫХ ЭЛЕМЕНТОВ */
+.cm-url,
+.cm-link,
+.external-link {
+  color: var(--text-normal) !important;
+  text-decoration-color: var(--text-faint) !important;
+}
+
+/* 5. ФИКС АКТИВНЫХ СОСТОЯНИЙ */
+.workspace-tab-header.is-active,
+.nav-file-title.is-active,
+.mod-cta {
+  color: var(--text-normal) !important;
+  background: var(--background-secondary) !important;
+}
+
+/* 6. ОТКЛЮЧЕНИЕ НЕНУЖНЫХ АНИМАЦИЙ */
+.modal,
+.popover,
+.menu,
+.dropdown {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* 7. УНИФИКАЦИЯ ХОВЕР-ЭФФЕКТОВ */
+.nav-file-title:hover,
+.nav-folder-title:hover,
+.clickable-icon:hover {
+  color: var(--text-normal) !important;
+  background: var(--background-secondary-alt) !important;
+  transform: none !important;
+}

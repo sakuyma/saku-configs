@@ -1,0 +1,292 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "beautitab-react-view",
+              "state": {},
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a0f26dca9b0b7fdf",
+    "type": "split",
+    "children": [
+      {
+        "id": "4906b9ca240c3d88",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f918abb050bc72a7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "07838afdec731e88",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          },
+          {
+            "id": "c272e0a7c506f329",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "c8b2891c2f8ca465",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 335.5
+  },
+  "right": {
+    "id": "151f8f3230d7c6a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "c6ba474c02ef7f1c",
+        "type": "tabs",
+        "dimension": 51.55038759689923,
+        "children": [
+          {
+            "id": "5bda78c0c48b29d4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура"
+            }
+          },
+          {
+            "id": "97373d2be4d43c32",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "22a7e9794951ce83",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки"
+            }
+          },
+          {
+            "id": "292d3b59d2193855",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Trackers/Отслеживание динамики веса.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Отслеживание динамики веса"
+            }
+          },
+          {
+            "id": "9ad515ec3884a9f7",
+            "type": "leaf",
+            "state": {
+              "type": "reminder-list",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "d562352cbedffef2",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
+            }
+          },
+          {
+            "id": "67dfa8ce86e1a2f0",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
+            }
+          }
+        ],
+        "currentTab": 6
+      },
+      {
+        "id": "40fdb9fb8501f47a",
+        "type": "tabs",
+        "dimension": 48.44961240310077,
+        "children": [
+          {
+            "id": "6fe7a219df5c0451",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "199d4f1f2756026b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 407.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:Граф": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": true,
+      "command-palette:Открыть палитру команд": true,
+      "switcher:Меню быстрого перехода": true,
+      "canvas:Создать новый холст": false,
+      "random-note:Открыть случайную заметку": false,
+      "workspaces:Пространства": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-kanban:Создать новую доску": false,
+      "obsidian-importer:Open Importer": false,
+      "homepage:Open homepage": false,
+      "obsidian-excalidraw-plugin:Создать новый чертеж": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
+    }
+  },
+  "active": "67dfa8ce86e1a2f0",
+  "lastOpenFiles": [
+    "Homepage.md",
+    "Чеклист ежедневных дел.md",
+    "Knowledge/IT/Главные/ООП.md",
+    "Knowledge/IT/Главные/Функциональное программирование",
+    "Knowledge/IT/Главные/ООП/Полиморфизм.md",
+    "My life/4. Education/It/Сайты/Github.md",
+    "Knowledge/IT/Главные/ООП/Инкапсуляция.md",
+    "Knowledge/IT/Главные/ООП/Наследование.md",
+    "Knowledge/IT/IT.md",
+    "Daily/Daily.md",
+    "My life/4. Education/books/Чистая архитектура.md",
+    "Trackers/Books.md",
+    "Trackers/ToDo.md",
+    "~$бюджет.xlsx",
+    "Trackers/Отслеживание динамики веса.md",
+    "Daily/Динамика веса/Вес - 07 - 2025.md",
+    "Daily/Динамика веса/Вес - 06 - 2025.md",
+    "Trackers/Аниме.md",
+    "Trackers/Games.md",
+    "Habits/Спорт каждый день.md",
+    "Habits/10000 шагов.md",
+    "Habits/Учить программирование.md",
+    "Trackers/Фильмы и сериалы.md",
+    "My life/4. Education/books/Современные операционные сети.md",
+    "My life/4. Education/books/Компьютерные сети.md",
+    "Knowledge/IT/Главные/Algorythm/Поиск в ширину.md",
+    "Knowledge/IT/Главные/Algorythm/Бинарный поиск.md",
+    "Files/Images/programming laungages_no.png",
+    "6D46D100",
+    "Files/Images/programming laungages.png",
+    "Excalidraw",
+    "My life/2. Projects/Habt",
+    "Files/PDF/Введение в язык C++.pdf",
+    "Files/PDF/moc-notes.pdf",
+    "Files/PDF/Метод CODE.pdf",
+    "Files/PDF/Метод PARA.pdf",
+    "Files/PDF/Zettelkasten.pdf",
+    "Без названия.canvas",
+    "My life/Telegram.md - 202507223801939.jpg",
+    "Assets/OBSidian/Элементы/Pictures/YouTube Трансляции/Другое/Ключи2.png",
+    "Assets/OBSidian/Элементы/Pictures/YouTube Трансляции/Другое/Ключи1.png",
+    "Assets/OBSidian/Элементы/Pictures/YouTube Трансляции/Другое/YouTube Звук Трансляции.png",
+    "Assets/OBSidian/Элементы/Pictures/YouTube Трансляции/Nvidia YouTube Трансляции/YouTube HEVC Ключ 4K60 + Стандартная задержка.png",
+    "Assets/OBSidian/Элементы/Pictures/YouTube Трансляции/Nvidia YouTube Трансляции/YouTube HEVC Ключ 1440p60 + Низкая задержка и выше.png",
+    "Assets/OBSidian/Элементы/Pictures/YouTube Трансляции/Nvidia YouTube Трансляции/YouTube HEVC Ключ 1080p60 + Сверхнизкая задержка и выше.png",
+    "Assets/OBSidian/Элементы/Pictures/YouTube Трансляции/Nvidia YouTube Трансляции/YouTube H.264 Ключ 4K60 + Стандартная задержка.png"
+  ]
+}

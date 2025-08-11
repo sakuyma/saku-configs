@@ -1,0 +1,24 @@
+{
+  "moveOnOpen": false,
+  "movingRules": [
+    {
+      "regex": "\\.pdf$",
+      "folder": "Files\\PDF"
+    },
+    {
+      "regex": "\\.png$",
+      "folder": "Files\\Images"
+    },
+    {
+      "regex": "\\.jpg$",
+      "folder": "Files\\Images"
+    },
+    {
+      "regex": "\\.jpeg$",
+      "folder": "Files\\Images"
+    }
+  ],
+  "exclusionRules": [],
+  "automaticMoving": true,
+  "timer": null
+}
