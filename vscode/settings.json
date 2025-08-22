@@ -1,15 +1,6 @@
-{
-    "security.workspace.trust.untrustedFiles": "open",
-    "files.autoSave": "afterDelay",
-    "C_Cpp.default.compilerPath": "c:\\Users\\saku\\Downloads\\project\\src\\config_reset.cpp",
-    "python.createEnvironment.trigger": "off",
-    "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
-    "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose"
-
-    {
     // Установить собственный шрифт и его размеры
     "editor.fontFamily": "'JetBrains Mono', 'bold', bold",
-    "editor.fontSize": 24,
+    "editor.fontSize": 16,
 
     // Установить иконки и настроить их
     "workbench.iconTheme": "material-icon-theme",
@@ -17,7 +8,7 @@
     "workbench.tree.indent": 14,
 
     // Установить тему по дефолту
-    "workbench.colorTheme": "Kanagawa Wave",    
+    "workbench.colorTheme": "Kanagawa Wave",
 
     // Отсчет строчки относительно текущего курсора
     "editor.lineNumbers": "relative",
@@ -134,15 +125,3 @@
 
     // Отключает всплывающие предложения установить расширения
     "extensions.ignoreRecommendations": true,
-
-    //Устанавливает плавные анимации
-    "editor.smoothScrolling": "True",
-    "editor.cursorSmoothCaretAnimation": "On",
-    "terminal.integrated.smoothScrolling": "True",
-    "workbench.list.smoothScrolling": "True",
-
-
-}
-
-
-}
