@@ -1,27 +1,32 @@
-    // Установить собственный шрифт и его размеры
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "python.createEnvironment.trigger": "off",
+
+    // Set font
     "editor.fontFamily": "'JetBrains Mono', 'bold', bold",
     "editor.fontSize": 16,
 
-    // Установить иконки и настроить их
+     // Set color theme
+    "workbench.colorTheme": "Kanagawa Wave",
+
+   
+    // Set icons
     "workbench.iconTheme": "material-icon-theme",
     "material-icon-theme.hidesExplorerArrows": true,
     "workbench.tree.indent": 14,
-
-    // Установить тему по дефолту
-    "workbench.colorTheme": "Kanagawa Wave",
-
-    // Отсчет строчки относительно текущего курсора
+    
+    // Counting a line relative to the cursor
     "editor.lineNumbers": "relative",
 
-    // Запрашивать подтверждение на удаление и Drag&Drop
+    // Request confirmation for deletion and Drag&Drop
     "explorer.confirmDragAndDrop": true,
     "explorer.confirmDelete": true,
 
-    // Настройка excalidraw по дефолту
+    // Setting up excalidraw by default
     "excalidraw.workspaceLibraryPath": ".",
     "excalidraw.theme": "dark",
 
-    // Убираем виджет справа для скролла
+    // Remove the widget on the right for scrolling
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
     "editor.minimap.enabled": false,
@@ -47,81 +52,89 @@
         "editorOverviewRuler.infoForeground": "#0000",
         "editorOverviewRuler.border": "#0000",
         },
-    // Убрать статус бар снизу
+    // Remove status bar from bottom
     "workbench.statusBar.visible": false,
 
-    // Настройка drawio
+    // Setting up drawio
     "hediet.vscode-drawio.resizeImages": null,
 
-    // Не показывать все открытые вкладки
+    // Don't show all open tabs
     "workbench.editor.showTabs": "single",
 
-    // Установить дефолтный размер для редактора
+    // Set default size for editor
     "window.zoomLevel": 2,
 
-    // Настройка курсора
+    // Cursor Settings
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.cursorBlinking": "solid",
 
-    // Отключаем панель управления окном
+    // Disable the window control panel
     "chat.commandCenter.enabled": false,
     "workbench.layoutControl.enabled": false,
     "window.customTitleBarVisibility": "never",
     "window.titleBarStyle": "native",
     "window.menuBarVisibility": "toggle",
 
-    // Отключаем лишние декорации и метки
+    // Turn off unnecessary decorations and labels
     "explorer.decorations.badges": false,
     "git.decorations.enabled": false,
     "scm.diffDecorations": "none",
 
-    // Настройка плагина todo
+    // Setting up the todo plugin
     "todohighlight.isEnable": true,
 
-    // По дефолту открывать пустую страницу
+    // Open a blank page by default
     "workbench.startupEditor": "none",
 
-    // Отключить вывод сигнатуры функции
+    // Disable function signature output
     "editor.parameterHints.enabled": false,
     "editor.hover.enabled": false,
     "files.trimTrailingWhitespace": false,
     "editor.links": false,
 
-    // Установить длину одного tab
+    // Set the length of one tab
     "editor.tabSize": 4,
 
-    // Добавлять одну пустую строку в конец файла чтобы избежать ошибоки
+    // Add one blank line to the end of the file to avoid errors
     "files.insertFinalNewline": true,
 
-    // Отключаем окно с помощью для новичков
+    // Disabling the window with help for beginners
     "workbench.tips.enabled": false,
 
-    // Отключаем прилипание заголовка в деревьях
+    // Disable Header Sticking in Trees
     "workbench.tree.enableStickyScroll": false,
 
-    // Убирает вертикальные линии отступов в дереве файлов
+    // Removes vertical indentation lines in the file tree
     "workbench.tree.renderIndentGuides": "none",
 
-    // Всегда использовать те отступы, которые заданы вручную (tabSize, insertSpaces и т.п.), а не угадывать.
+    // Always use the indents that are set manually (tabSize, insertSpaces, etc.), rather than guessing.
     "editor.detectIndentation": false,
     
-    // Убрать значок для сворачивания кода
+    // Remove code collapsing icon
     "editor.showFoldingControls": "never",
 
-    // Отключает вертикальные линии отступов в редакторе
+    // Disables vertical indentation lines in the editor
     "editor.guides.indentation": false,
     
-    // Не показывает пробелы, табы, перевод строки и т.п. символы в редакторе
+    // Does not show spaces, tabs, line breaks, etc. symbols in the editor
     "editor.renderWhitespace": "none",
 
-    // Отключает подсветку активной строки
+    // Disables the active line backlight
     "editor.renderLineHighlight": "none",
 
-    // Автосохранение файлов через короткую паузу после редактирования
+    // Autosave files after a short pause after editing
     "files.autoSave": "afterDelay",
 
-    // Отключает автообновления VS Code
+    // Disables VS Code auto-updates
     "update.mode": "none",
 
-    // Отключает всплывающие предложения установить расширения
+    // Disables pop-up offers to install extensions
     "extensions.ignoreRecommendations": true,
+
+    // Makes Vscode smoother
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+}
+
