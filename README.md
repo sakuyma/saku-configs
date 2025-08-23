@@ -20,4 +20,4 @@ The repository includes configs for the following tools:
 ---
 
 
-thx: @whyhilde for the nvim config
+thx: [@whyhilde] (https://github.com/whyhilde) for the nvim config
