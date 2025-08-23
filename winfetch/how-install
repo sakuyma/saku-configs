@@ -1,0 +1,17 @@
+# ℹ️ Installing Winfetch
+
+## ⚙️ Replacing the System Script
+
+1. **Copy my winfetch.ps1 to: C:\Program Files\WindowsPowerShell\Scripts**
+
+2. **Run the check:**
+```powershell
+winfetch
+```
+## ⚠️ Important!
+
+May require running PowerShell as administrator
+
+It's recommended to back up the original file
+
+## Done!

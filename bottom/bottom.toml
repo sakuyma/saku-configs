@@ -1,0 +1,73 @@
+[flags]
+rate = "1s"
+current_usage = false
+temperature_type = "c"
+hide_time = true
+
+[styles]
+theme = "default"
+
+[colors]
+primary = "#a9b1d6"
+secondary = "#c0caf5"
+title = "#7aa2f7"
+
+high_status = "#f7768e"
+medium_status = "#ff9e64"
+low_status = "#9ece6a"
+
+graph_primary = "#7aa2f7"
+graph_secondary = "#bb9af7"
+
+background = "#1a1b26"
+border = "#565f89"
+
+table_header = "#7dcfff"
+cursor = "#c0caf5"
+selected = "#414868"
+
+disk_free = "#9ece6a"
+disk_used = "#7aa2f7"
+memory_free = "#9ece6a"
+memory_used = "#bb9af7"
+
+cpu_core = "#7aa2f7"
+cpu_average = "#bb9af7"
+
+
+[[row]]
+ratio = 25
+  [[row.child]]
+  type = "cpu"
+
+[[row]]
+ratio = 75
+  [[row.child]]
+  ratio = 33
+    [[row.child.child]]
+    type = "mem"
+    ratio = 50
+    
+    [[row.child.child]]
+    type = "disk"
+    ratio = 50
+  
+  [[row.child]]
+  type = "proc"
+  ratio = 67
+  default = true
+
+[processes]
+columns = ["PID", "Name", "CPU%", "Mem%"]
+
+[disk]
+enabled = true
+
+[memory]
+enabled = true
+
+[temp]
+enabled = false
+
+[network]
+enabled = false
