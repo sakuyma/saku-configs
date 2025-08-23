@@ -17,7 +17,7 @@ The repository includes configs for the following tools:
 | Windhawk  | UI customization and tweaks.                     | windhawk/  |
 | Winfetch  | System information in neofetch style.            | winfetch/  |
 | Bottom    | System monitoring in htop/btop style.            | bottom/    |
-|-----------|--------------------------------------------------|------------|
+---
 
 
 thx: @whyhilde for the nvim config
