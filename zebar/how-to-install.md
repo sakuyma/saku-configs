@@ -25,7 +25,7 @@ Copy the widget file:
 
     Extends your panel's functionality with new features
 
-    Displays useful information (weather, system metrics, etc.)
+    Displays useful information (system metrics, etc.)
 
     Unique look and customization
 
