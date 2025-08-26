@@ -18,7 +18,7 @@ The repository includes configs for the following tools:
 | Winfetch  | System information in neofetch style.            | winfetch/  |
 | Bottom    | System monitoring in htop/btop style.            | bottom/    |
 | GlazeWM   | GlazeWM is a tiling window manager.              | glazewm/    |
-| Zebar     | Zebar is a tool for creating custom taskbars.    | bottom/    |
+| Zebar     | Zebar is a tool for creating custom taskbars.    | zebar/    |
 ---
 
 
