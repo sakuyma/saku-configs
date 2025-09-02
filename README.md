@@ -1,5 +1,5 @@
 # 🔧 saku-configs
-в
+
 A collection of configuration files for quickly setting up a Windows development environment.
 в
 This repository contains ready-to-use configurations for development tools, system utilities, and workflow optimizations. Everything is set up for comfortable and productive "out-of-the-box" usage.
